@@ -1,0 +1,109 @@
+nav{
+    display: flex;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    background-color: #e0e0e0;
+    z-index: 99;
+    .head-right{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        form{
+            display: flex;
+            border: 1px solid #242424;
+            border-radius: 10vw;
+            box-shadow: none;
+            color: #e0e0e0;
+            background-color: #242424;
+            padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+        input{
+            border: none;
+            outline: none;
+            background-color: #242424;
+            color: #e0e0e0;
+           
+            // box-shadow: none;
+            // color: #e0e0e0;
+            // background-color: #242424;
+            // padding: 0.5rem 1.5rem;
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
+            // outline: none;   
+        }
+        input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #e0e0e0;
+            opacity: 1; /* Firefox */
+          }
+          
+          input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: #e0e0e0;
+          }
+          
+          input::-ms-input-placeholder { /* Microsoft Edge */
+            color: #e0e0e0;
+          }
+        button{
+            background-color: #242424;
+            // color: #e0e0e0;
+            border: none;
+            :hover{
+                cursor: pointer;
+            }
+        }
+    }
+    }
+}
+
+@media only screen and (max-width:768px){
+    nav{
+        h1{
+            font-size: 2rem;
+        }
+    }
+}
+
+@media only screen and (max-width:550px){
+    nav{
+        form{
+            input{
+                width: 20vw;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:425px){
+    nav{
+        padding: 0 1rem;
+
+        h1{
+            font-size: 1.5rem;
+        }
+        form{
+            input{
+                font-size: 0.8rem;
+                width: 15vw;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:375px){
+    nav{
+        padding: 0 1rem;
+        h1{
+            font-size: 1.5rem;
+        }
+        form{
+            
+            input{
+                font-size: 0.55rem;
+                width: 15vw;
+            }
+        }
+    }
+}
